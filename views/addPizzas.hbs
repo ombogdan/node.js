@@ -1,1 +1,29 @@
-<h1>Add Pizzas</h1>
+<h1>Add Pizza</h1>
+<form action="/add" method="POST">
+    <div class="input-field col s6">
+        <input name="title" id="title" type="text" class="validate" required>
+        <label for="title">Name</label>
+        <span class="helper-text" data-error="Enter Name" ></span>
+    </div>
+
+    <div class="input-field col s6">
+        <input name="price" id="price" type="text" class="validate" required min="50">
+        <label for="price">Price</label>
+        <span class="helper-text" data-error="Enter Price" ></span>
+    </div>
+
+    <div class="input-field col s6">
+        <input name="ingredients" id="ingredients" type="text" class="validate" required>
+        <label for="ingredients">Ingredients</label>
+        <span class="helper-text" data-error="Enter Ingredients" ></span>
+    </div>
+
+    <div class="input-field col s6">
+        <input name="img" id="img" type="text" class="validate" required>
+        <label for="img">Photo</label>
+        <span class="helper-text" data-error="Enter URL"></span>
+    </div>
+<div class="row">
+    <button class="btn btn-primary col s3 offset-s4">Add</button>
+</div>
+</form>

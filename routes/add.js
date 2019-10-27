@@ -1,5 +1,5 @@
 const {Router} = require('express');
-const  router = Router();
+const router = Router();
 router.get("/", (req, res) => {
     res.render('addPizzas', {
         title: "Add Pizzas",
@@ -7,4 +7,11 @@ router.get("/", (req, res) => {
 
     });
 });
+
+router.post("/", (req, res) => {
+    console.log(req.body);
+    res.redirect("/courses")
+
+});
+
 module.exports = router;
