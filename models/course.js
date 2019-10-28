@@ -45,7 +45,7 @@ class Course {
         return new Promise((resolve, reject) => {
                 fs.readFile(
                     path.join(__dirname, "..", "data", "courses.json"),
-                    "utf-8",
+                    'utf-8',
                     (err, content) => {
                         if (err) {
                             reject(err)
